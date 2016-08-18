@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/imageViewHeaderSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header" />
+
+    <ScrollView
+        android:id="@+id/scrollViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageViewHeaderSignUp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGNUP"
+                android:textColor="#cecdce"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageViewPhotoSignUp"
+                android:layout_width="@dimen/profile_pic_width_size"
+                android:layout_height="@dimen/profile_pic_height_size"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dummyprofilepic" />
+
+            <EditText
+                android:id="@+id/editTextNameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Name*"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="User name*"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaleSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector"
+                    android:paddingLeft="@dimen/signup_radio_button_space"
+                    android:text="Male"
+                    android:textColor="#cecdce"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemaleSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:button="@drawable/radio_selector"
+                    android:paddingLeft="@dimen/signup_radio_button_space"
+                    android:text="Female"
+                    android:textColor="#cecdce"
+                    android:textSize="15dp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Email*"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Password*"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextMobileSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Mobile No.*"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextStatusSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Status message"
+                android:inputType="textShortMessage"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextAboutSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="About Me"
+                android:inputType="textShortMessage"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextCitySignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="City*"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <EditText
+                android:id="@+id/editTextCountrySignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_sign"
+                android:hint="Country*"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#c05994" />
+
+            <ImageView
+                android:id="@+id/buttonImageViewSubmitSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/submit_button_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

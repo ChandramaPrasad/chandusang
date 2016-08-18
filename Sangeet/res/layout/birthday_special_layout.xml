@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/menubirthdaySpecialLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTableLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menustrip"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/newarrival"
+            android:paddingLeft="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mostviewed"
+            android:paddingLeft="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/birthdayspcl"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/videosongs"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/comedy"
+            android:paddingLeft="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/romance"
+            android:paddingLeft="2dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/birthdayRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menubirthdaySpecialLinearLayout"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/birthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAMANATA Birthday special"
+            android:textColor="@color/white"
+            android:textSize="@dimen/name_text_size" />
+
+        <GridView
+            android:id="@+id/birthdaySpecialGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/birthTextView"
+            android:layout_margin="8dp"
+            android:columnWidth="50dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

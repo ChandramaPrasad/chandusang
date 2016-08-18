@@ -1,0 +1,336 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true" >
+
+        <!-- Listview to display slider menu -->
+
+        <FrameLayout
+            android:id="@+id/contentFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/menuTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/actionbar_header_top_margin"
+                    android:animateLayoutChanges="true" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/devotionalImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/devotional" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/teluguImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/telugu" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="15dp"
+                                android:background="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/tamilImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/tamil" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp" >
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/kanadaImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/kannada" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:background="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/malaylamImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/malayalam" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="15dp"
+                                android:background="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/bhojpuriImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/bhojpuri" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuButtonLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menuTableLayout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/menustrip"
+                    android:orientation="horizontal"
+                    android:weightSum="6" >
+
+                    <ImageView
+                        android:id="@+id/newarrivalImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/newarrival_f" />
+
+                    <ImageView
+                        android:id="@+id/mostviewImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/mostviewed_f" />
+
+                    <ImageView
+                        android:id="@+id/birthspecImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/birthdayspcl_f" />
+
+                    <ImageView
+                        android:id="@+id/videoSongImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/videosongs_f" />
+
+                    <ImageView
+                        android:id="@+id/comedyspecialImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/comedy_f" />
+
+                    <ImageView
+                        android:id="@+id/roamceImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/romance_f" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/languageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:id="@+id/telguTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Telugu"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tamilTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Tamil"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/kannadaTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Kanada"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/malyalamTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Malayalam"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/bhojpuriTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Bhojpuri"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <com.github.ksoichiro.android.observablescrollview.ObservableGridView
+                    android:id="@+id/obsergridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menuButtonLinearLayout"
+                    android:layout_margin="10dp"
+                    android:columnWidth="50dp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Menu -->
+
+        <RelativeLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="@dimen/left_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#161114"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navigation_drawer_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/menusliderbg" >
+
+                <ImageView
+                    android:id="@+id/userpicImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/navigation_drawer_image_left"
+                    android:layout_marginTop="@dimen/navigation_drawer_image_top"
+                    android:src="@drawable/profilepic" />
+
+                <TextView
+                    android:id="@+id/loginNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/navigation_drawer_text_left"
+                    android:layout_marginTop="@dimen/navigation_drawer_text_top"
+                    android:layout_toRightOf="@+id/userpicImageView"
+                    android:singleLine="true"
+                    android:text="Welcome guest"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/drawer_welcome_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/messagetextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginNameTextView"
+                    android:layout_marginLeft="@dimen/navigation_drawer_text_left"
+                    android:layout_toRightOf="@+id/userpicImageView"
+                    android:singleLine="true"
+                    android:text="Signin to play offline"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/drawer_singning_text_size" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/drawer_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/image_view"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

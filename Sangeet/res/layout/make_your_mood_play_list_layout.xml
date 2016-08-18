@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/makeYourMoodPlayListTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/makeYourMoodPlayListGivenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/make_your_mood_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/make_your_mood_text_size" />
+
+        <TextView
+            android:id="@+id/makeYourMoodPlayListSituationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/makeYourMoodPlayListGivenTextView"
+            android:text=" Happy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/make_your_mood_text_size" />
+
+        <ImageView
+            android:id="@+id/makeYourMoodPlayListImageView"
+            android:layout_width="@dimen/make_mood_play_list_width"
+            android:layout_height="@dimen/make_mood_play_list_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/makeYourMoodPlayListSituationTextView"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/makeYourMoodPlayListStateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Telugu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/make_your_mood_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/makeYourMoodPlayListTopLayout"
+        android:layout_margin="10dp" >
+
+        <GridView
+            android:id="@+id/mood_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

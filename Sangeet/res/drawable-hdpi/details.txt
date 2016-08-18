@@ -1,0 +1,5 @@
+grid lines : #e2e0e2
+
+Videobg : #982169
+
+font color code: #cecdce

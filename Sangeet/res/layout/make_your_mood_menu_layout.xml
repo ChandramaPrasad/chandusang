@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/mainRadioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/moodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="MAKE YOUR MOOD "
+            android:textColor="@color/white"
+            android:textSize="@dimen/make_your_mood_text_size" />
+
+        <RadioGroup
+            android:id="@+id/stateRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moodTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <RadioButton
+                android:id="@+id/teluguRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/radio_mood_list_padding_left"
+                android:text="Telegu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mood_radio_button_size" />
+
+            <RadioButton
+                android:id="@+id/tamilRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="@dimen/radio_mood_list_padding_left"
+                android:text="Tamil"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mood_radio_button_size" />
+
+            <RadioButton
+                android:id="@+id/kanadaRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="@dimen/radio_mood_list_padding_left"
+                android:text="Kanada"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mood_radio_button_size" />
+
+            <RadioButton
+                android:id="@+id/malayalamRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="@dimen/radio_mood_list_padding_left"
+                android:text="Malayalam"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mood_radio_button_size" />
+
+            <RadioButton
+                android:id="@+id/bhojpuriRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="@dimen/radio_mood_list_padding_left"
+                android:text="Bhojpuri"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mood_radio_button_size" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCircularImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainRadioLayout"
+        android:layout_marginBottom="@dimen/new_layout_circle_margin_bottom"
+        android:layout_marginLeft="@dimen/new_layout_circular_margin_left"
+        android:layout_marginRight="@dimen/new_layout_circular_margin_right"
+        android:layout_marginTop="@dimen/new_layout_circular_margin_top"
+        android:background="@drawable/moodbg"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/layoutSad"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height_circular_layout" >
+
+            <ImageView
+                android:id="@+id/imageViewSmile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/layout_sad_left_margin"
+                android:layout_marginTop="@dimen/layout_sad_top_margin"
+                android:src="@drawable/menu_mood_smile_selector" />
+
+            <ImageView
+                android:id="@+id/imageViewSad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/layout_sad_right_margin"
+                android:layout_marginTop="@dimen/layout_sad_top_margin"
+                android:src="@drawable/menu_mood_sad_selector" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutEmotionSelect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height_circular_layout"
+            android:layout_below="@+id/layoutSad"
+            android:layout_marginBottom="@dimen/layout_emotion_margin_bottom"
+            android:layout_marginTop="@dimen/layout_emotion_margin_top" >
+
+            <ImageView
+                android:id="@+id/imageViewHotFeeling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/layout_emotion_view_margin_left"
+                android:layout_marginTop="@dimen/layout_emotion_view_margin_top"
+                android:src="@drawable/menu_mood_selector_hotfeeling" />
+
+            <ImageView
+                android:id="@+id/imageViewLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/layout_emotion_view_margin_right"
+                android:layout_marginTop="@dimen/layout_emotion_view_margin_top"
+                android:src="@drawable/menu_mood_love_selector" />
+
+            <ImageView
+                android:id="@+id/imageViewEmotionSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/emotionselect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutAction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height_circular_layout"
+            android:layout_below="@+id/layoutEmotionSelect" >
+
+            <ImageView
+                android:id="@+id/imageViewAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/layout_action_image_margin_top"
+                android:src="@drawable/menu_mood_action_selector" />
+
+            <CheckBox
+                android:id="@+id/selectImageCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/layout_action_check_margin_top"
+                android:button="@drawable/checkbox_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

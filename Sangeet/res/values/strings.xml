@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sangeet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_next">NextActivity</string>
+    <string name="title_activity_make_your_mood_play_list">MakeYourMoodPlayList</string>
+    <string name="make_your_mood_text"><b>MAKE YOUR MOOD :</b></string>
+    <string name="title_activity_new_arrival">NewArrivalActivity</string>
+    <string name="title_activity_most_view">MostViewActivity</string>
+    <string name="title_activity_birthday_special">BirthdaySpecialActivity</string>
+    <string name="title_activity_special_birthday">SpecialBirthdayActivity</string>
+    <string name="title_activity_video_song">VideoSongActivity</string>
+    <string name="title_activity_comedy">ComedyActivity</string>
+    <string name="title_activity_romance">RomanceActivity</string>
+    <string name="title_activity_make_your_mood_menu">MakeYourMoodMenuActivity</string>
+    <string name="description">Video control</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_devotional_album">DevotionalAlbumActivity</string>
+    <string name="title_activity_songs">SongsActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_audio_controller">AudioControllerActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_video_play_list">VideoPlayList</string>
+    <string name="title_activity_video_fragement">VideoFragement</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

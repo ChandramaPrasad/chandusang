@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEEDBACK"
+            android:textColor="#cecdce"
+            android:textSize="@dimen/feedback_title_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="Your feedback is valuable for us."
+            android:textColor="#cecdce"
+            android:textSize="@dimen/feedback_message_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="sangeet feedback lets you send suggestion about about our product, we welcome problem reports,feature ideas and general comments.Your valuable is more important to us and helps us to entertain you more "
+            android:textColor="#cecdce"
+            android:textSize="@dimen/feedback_message_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c05994" >
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:maxLines="7"
+                android:paddingLeft="5dp"
+                android:textColor="#cecdce" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sendMailImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/submit_button_selector" />
+    </LinearLayout>
+
+</RelativeLayout>
